@@ -19,7 +19,8 @@
         // Function to fetch the exchange rates from the API
         async function fetchExchangeRates() {
             try {
-                const response = await fetch('/api/exchangeRates/USD/2022-01-01:2022-01-31');
+                const response = await fetch('http://localhost:5000/api/exchangeRates/INR/2022-01-01:2022-01-31');
+                console.log(response)
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
