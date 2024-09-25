@@ -6,6 +6,6 @@ const router = express.Router();
 router.get('/:currency/:period', getExchangeRates);
 
 // Route to get the highest and lowest exchange rates
-router.get('/:currency/minmax', getMinMaxRates);
+router.get('/:currency', getMinMaxRates);
 
 module.exports = router;
